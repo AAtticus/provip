@@ -110,6 +110,7 @@ class UserRepository extends EntityRepository
         return $qb->getQuery()->getResult();
     }
 
+
     public function getInternshipByCompany($company)
     {
         $qb = $this->_em->createQueryBuilder();
